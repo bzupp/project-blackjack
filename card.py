@@ -10,8 +10,11 @@ class Card:
         self.suit = suit
         # values set to card...Need to have exception for Aces
         self.value = value
-        # Set location of card: deck (default), dealer, player, discard
+        # Set location of card: deck (default), dealer, player, discard.
+        # Used to track where a card is.
         self.location = "deck"
+        # name of image file for the card. The Deck class is creating this name
+        # when a Deck instance is created, which creates the cards in the deck
         self.imagefile = imagefile
 
     # GETTERS

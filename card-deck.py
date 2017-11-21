@@ -10,11 +10,10 @@ from deck import *
 from player import *
 
 
-
 class Strategy:
     """Strategy(file) reads strategy file that contains 3 comma separated values:
     player hand total, dealer up card/total, player action. These values are used to create
-    Strategy object used during gameplay."""
+    Strategy object used during game play."""
     def __init__(self, file):
         # create read ready file object
         infile = open(file, 'r')
@@ -59,7 +58,7 @@ def main():
     playerStrategy = Strategy("basic-nodouble.txt")
     myDeck = Deck()
 
-    """Simulation loops for X times start here"""
+    """Simulation loops for X times start here. May have user input this number."""
     for i in range(5):
 
         # player bets
@@ -79,7 +78,8 @@ def main():
         print(player.getTotal(), 'player TOTAL')
 
         # Add 2 cards for dealer, set second card as upcard. Since only one card can be up, it doesn't matter that I
-        # setUpcard() eacy iteration
+        # setUpcard() each iteration
+
         for i in range(2):
             card = myDeck.dealCard(dealer.getLocation())
             print(card.getImageFile())

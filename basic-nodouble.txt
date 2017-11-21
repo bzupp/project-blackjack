@@ -2,10 +2,10 @@
 16,3,stand
 16,4,stand
 16,5,stand
-16,6, stand
-16,7, hit
-16,8, hit
-16,9, hit
+16,6,stand
+16,7,hit
+16,8,hit
+16,9,hit
 16,10,hit
 16,11,hit
 15,2,stand
